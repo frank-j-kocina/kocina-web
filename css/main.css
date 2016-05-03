@@ -4,7 +4,7 @@ html, body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     font-family: monospace;
     font-weight: 600;
 }
@@ -16,6 +16,16 @@ h1, h2, h3, h4, h5, h6 {
 .profile-pic {
     border-radius: 50%;
     width: 220px;
+}
+
+.profile-pic:hover {
+    animation: profile-pic-animation 1s 1;
+}
+
+@keyframes profile-pic-animation {
+    0%   { transform: rotate(0deg);   }
+    25%  { transform: rotate(-20deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .full-height {
