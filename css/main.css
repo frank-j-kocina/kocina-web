@@ -1,12 +1,20 @@
 html, body {
-    background: #FFFFFF;
+    /*background: url("../img/paper.png");*/
+    background: #ffffff;
     overflow-x: hidden;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
     font-family: monospace;
     font-weight: 600;
+    margin-bottom: 1.2em;
+}
+
+p {
+    margin-bottom: 1.2em;
+    font-family: monospace;
+    font-size: 18px;
 }
 
 .page-container {
@@ -14,18 +22,33 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .profile-pic {
+    box-shadow:  1px  1px 10px #aaaaaa,
+                -1px -1px 10px #aaaaaa,
+                 1px -1px 10px #aaaaaa,
+                -1px  1px 10px #aaaaaa;
     border-radius: 50%;
     width: 220px;
 }
 
 .profile-pic:hover {
-    animation: profile-pic-animation 1s 1;
+    animation: profile-pic-bounce-animation 1s 1;
 }
 
-@keyframes profile-pic-animation {
-    0%   { transform: rotate(0deg);   }
-    25%  { transform: rotate(-20deg); }
-    100% { transform: rotate(360deg); }
+@keyframes profile-pic-bounce-animation {
+    0%   { box-shadow:  1px  1px 10px #aaaaaa,
+                       -1px -1px 10px #aaaaaa,
+                        1px -1px 10px #aaaaaa,
+                       -1px  1px 10px #aaaaaa; }
+    25%  { box-shadow:  none; }
+    50%  { box-shadow:  1px  1px 10px #aaaaaa,
+                       -1px -1px 10px #aaaaaa,
+                        1px -1px 10px #aaaaaa,
+                       -1px  1px 10px #aaaaaa; }
+    75%  { box-shadow:  none; }
+    100% { box-shadow:  1px  1px 10px #aaaaaa,
+                       -1px -1px 10px #aaaaaa,
+                        1px -1px 10px #aaaaaa,
+                       -1px  1px 10px #aaaaaa; }
 }
 
 .full-height {
@@ -46,12 +69,20 @@ h1, h2, h3, h4, h5, h6, p {
 .social-image {
     width: 40px;
     height: 40px;
+    box-shadow: 0 2px 10px #777777;
+    border-radius: 5px;
 }
 
 .social-image:hover {
-    margin-top: 1px;
-    height: 38px;
-    opacity: 0.75;
+    animation: social-bounce-animation 1s 1;
+    box-shadow: none; /* after animation is complete */
+}
+
+@keyframes social-bounce-animation {
+    0%   { box-shadow: 0 2px 10px #777777; }
+    33%  { box-shadow: none; }
+    66%  { box-shadow: 0 5px 10px #777777; }
+    100% { box-shadow: none; }
 }
 
 .spacer {
