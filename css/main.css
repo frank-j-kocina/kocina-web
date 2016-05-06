@@ -1,5 +1,4 @@
 html, body {
-    /*background: url("../img/paper.png");*/
     background: #ffffff;
     overflow-x: hidden;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -31,7 +30,8 @@ p {
 }
 
 .profile-pic:hover {
-    animation: profile-pic-bounce-animation 1s 1;
+    animation: profile-pic-bounce-animation 0.75s 1;
+    box-shadow: none; /* after animation is complete */
 }
 
 @keyframes profile-pic-bounce-animation {
@@ -39,16 +39,12 @@ p {
                        -1px -1px 10px #aaaaaa,
                         1px -1px 10px #aaaaaa,
                        -1px  1px 10px #aaaaaa; }
-    25%  { box-shadow:  none; }
-    50%  { box-shadow:  1px  1px 10px #aaaaaa,
+    33%  { box-shadow:  none; }
+    66%  { box-shadow:  1px  1px 10px #aaaaaa,
                        -1px -1px 10px #aaaaaa,
                         1px -1px 10px #aaaaaa,
                        -1px  1px 10px #aaaaaa; }
-    75%  { box-shadow:  none; }
-    100% { box-shadow:  1px  1px 10px #aaaaaa,
-                       -1px -1px 10px #aaaaaa,
-                        1px -1px 10px #aaaaaa,
-                       -1px  1px 10px #aaaaaa; }
+    100% { box-shadow:  none; }
 }
 
 .full-height {
@@ -74,7 +70,7 @@ p {
 }
 
 .social-image:hover {
-    animation: social-bounce-animation 1s 1;
+    animation: social-bounce-animation 0.75s 1;
     box-shadow: none; /* after animation is complete */
 }
 
