@@ -84,3 +84,11 @@ p {
 .spacer {
     height: 50px;
 }
+
+.mb1 {
+    margin-bottom: 1em;
+}
+
+.mb2 {
+    margin-bottom: 2em;
+}
