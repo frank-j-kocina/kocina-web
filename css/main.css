@@ -81,6 +81,15 @@ p {
     100% { box-shadow: none; }
 }
 
+.blog-img-p {
+    text-align: center;
+}
+
+.blog-img-p img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
 .spacer {
     height: 50px;
 }
