@@ -90,6 +90,11 @@ p {
     max-height: 500px;
 }
 
+.blog-post-list {
+    list-style: none;
+    padding: 0;
+}
+
 .spacer {
     height: 50px;
 }
