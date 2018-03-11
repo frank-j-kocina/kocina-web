@@ -48,7 +48,7 @@ A complete guide to setup and renewal can be found below.
 
 ## Roadmap Initiatives
 
-* Set up JavaScript framework and templating (Angular2 or React).
+* Dynamic blog routing, more data driven. 
 * Automate SSL Setup and Renewal.
 * Determine if I need shorter CloudFront cache TTLs.
 * Automate deployments and CloudFront cache invalidation.
