@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import Social from './Social.js'
-import profilePic from './img/me.jpg';
+import profilePic from './img/me.png';
 
 class Sidebar extends Component {
   render() {
