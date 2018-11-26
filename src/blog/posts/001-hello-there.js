@@ -4,7 +4,7 @@ import BlogNavigation from "../../BlogNavigation";
 class BlogPost001 extends Component {
   render() {
     return (
-      <div className="blog col-xs-12 col-sm-8 col-md-9">
+      <div className="blog col-12 col-sm-8 col-md-9">
         <h1 className="blog-title">001 - Hello There! ;]</h1>
         <h4 className="blog-date">2017-01-01</h4>
         <p>

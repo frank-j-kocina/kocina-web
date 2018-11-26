@@ -9,6 +9,18 @@
 This site is statically hosted on AWS using S3 as a file store, CloudFront as a CDN, and Route53 for DNS.
 The SSL certificate is created with LetsEncrypt and installed via IAM.
 
+##### Install Dependencies
+`yarn install`
+
+##### Running the App in Dev Mode
+`yarn run start`
+
+##### Building the App for Production
+`yarn run build`
+
+##### Deploying the App to Production
+Copy files from the `build` directory to S3.
+
 
 
 
@@ -48,6 +60,7 @@ A complete guide to setup and renewal can be found below.
 
 ## Roadmap Initiatives
 
+* Get rid of Bootstrap lib and use Reactstrap.
 * Dynamic blog routing, more data driven. 
 * Automate SSL Setup and Renewal.
 * Determine if I need shorter CloudFront cache TTLs.

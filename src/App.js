@@ -1,13 +1,26 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import ScrollToTop from './ScrollToTop.js'
-import Sidebar from './Sidebar.js'
-import Home from './Home.js'
-// import BlogPost from './BlogPost.js'
-import BlogPost001 from "./blog/posts/001-hello-there.js";
-import BlogPost002 from "./blog/posts/002-500-miles.js";
-import BlogPost003 from "./blog/posts/003-this-just-got-real.js";
-import BlogPost004 from "./blog/posts/004-down-but-not-out.js";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import {
+  faChevronLeft,
+  faChevronRight
+} from '@fortawesome/free-solid-svg-icons';
+
+import ScrollToTop from './ScrollToTop.js';
+import Sidebar from './Sidebar.js';
+import Home from './Home.js';
+// import BlogPost from './BlogPost.js';
+import BlogPost001 from './blog/posts/001-hello-there.js';
+import BlogPost002 from './blog/posts/002-500-miles.js';
+import BlogPost003 from './blog/posts/003-this-just-got-real.js';
+import BlogPost004 from './blog/posts/004-down-but-not-out.js';
+
+library.add(
+    fas,
+    faChevronLeft,
+    faChevronRight);
 
 class App extends Component {
   render() {

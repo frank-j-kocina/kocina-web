@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-import Social from './Social.js'
+import { Link } from 'react-router-dom';
+import Social from './Social.js';
 import profilePic from './img/me.png';
 
 class Sidebar extends Component {
   render() {
     return (
-      <div className="col-xs-12 col-sm-4 col-md-3 text-center">
+      <div className="col-12 col-sm-4 col-md-3 text-center">
         <Link to="/">
           <img src={profilePic} className="profile-pic" alt="Me!"/>
         </Link>

@@ -5,7 +5,7 @@ import proof from '../../img/blog/003-proof.png'
 class BlogPost003 extends Component {
   render() {
     return (
-      <div className="blog col-xs-12 col-sm-8 col-md-9">
+      <div className="blog col-12 col-sm-8 col-md-9">
         <h1 className="blog-title">003 - This Just Got Real</h1>
         <h4 className="blog-date">2017-02-03</h4>
         <p className="blog-img-p">

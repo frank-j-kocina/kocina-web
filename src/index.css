@@ -122,12 +122,14 @@ a {
   margin-top: 80px;
 }
 
-.blog-navigation .glyphicon.glyphicon-chevron-left {
+.blog-navigation .nav-left {
+  position: relative;
   top: 2px;
   padding-right: 5px;
 }
 
-.blog-navigation .glyphicon.glyphicon-chevron-right {
+.blog-navigation .nav-right {
+  position: relative;
   top: 2px;
   padding-left: 5px;
 }

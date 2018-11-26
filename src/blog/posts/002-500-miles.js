@@ -5,7 +5,7 @@ import shoes from '../../img/blog/002-shoes.png'
 class BlogPost002 extends Component {
   render() {
     return (
-      <div className="blog col-xs-12 col-sm-8 col-md-9">
+      <div className="blog col-12 col-sm-8 col-md-9">
         <h1 className="blog-title">002 - 500 Miles</h1>
         <h4 className="blog-date">2017-01-21</h4>
         <p className="blog-img-p">

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BlogPostLink from "./BlogPostLink";
+import BlogPostLink from './BlogPostLink';
 
 class AllBlogPosts extends Component {
   render() {
