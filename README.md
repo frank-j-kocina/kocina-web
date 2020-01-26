@@ -58,9 +58,8 @@ A complete guide to setup and renewal can be found below.
 
 
 
-## Roadmap Initiatives
+## Roadmap
 
-* Get rid of Bootstrap lib and use Reactstrap.
 * Dynamic blog routing, more data driven. 
 * Automate SSL Setup and Renewal.
 * Determine if I need shorter CloudFront cache TTLs.

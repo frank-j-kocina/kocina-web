@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { Col } from 'reactstrap';
 import BlogNavigation from "../../BlogNavigation";
 import shoes from '../../img/blog/002-shoes.png'
 
 class BlogPost002 extends Component {
   render() {
     return (
-      <div className="blog col-12 col-sm-8 col-md-9">
+      <Col xs="12" sm="8" md="9" className="blog">
         <h1 className="blog-title">002 - 500 Miles</h1>
         <h4 className="blog-date">2017-01-21</h4>
         <p className="blog-img-p">
@@ -57,7 +58,7 @@ class BlogPost002 extends Component {
                         previousTitle="001 - Hello There! ;]"
                         nextLink="/blog/003-this-just-got-real"
                         nextTitle="003 - This Just Got Real"/>
-      </div>
+      </Col>
     );
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Row } from 'reactstrap';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -28,7 +29,7 @@ class App extends Component {
       <Router>
         <ScrollToTop>
           <div className="page-container">
-            <div className="row">
+            <Row>
               <Sidebar/>
               <Route exact path="/" component={Home}/>
               <Route path="/blog/001-hello-there" component={BlogPost001}/>
@@ -38,7 +39,7 @@ class App extends Component {
 
               {/* TODO - dynamic routing */}
               {/*<Route path="/blog/:post" component={BlogPost}/>*/}
-            </div>
+            </Row>
           </div>
         </ScrollToTop>
       </Router>

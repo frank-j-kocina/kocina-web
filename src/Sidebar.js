@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Col } from 'reactstrap';
 import Social from './Social.js';
 import profilePic from './img/me.png';
 
 class Sidebar extends Component {
   render() {
     return (
-      <div className="col-12 col-sm-4 col-md-3 text-center">
+      <Col xs="12" sm="4" md="3" className="text-center">
         <Link to="/">
           <img src={profilePic} className="profile-pic" alt="Me!"/>
         </Link>
@@ -17,7 +18,7 @@ class Sidebar extends Component {
           <h5>I press buttons on a keyboard to make computers do cool things!</h5>
           <Social/>
         </div>
-      </div>
+      </Col>
     );
   }
 }

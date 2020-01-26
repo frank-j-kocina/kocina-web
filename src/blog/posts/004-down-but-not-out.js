@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { Col } from 'reactstrap';
 import BlogNavigation from "../../BlogNavigation";
 
 class BlogPost004 extends Component {
   render() {
     return (
-      <div className="blog col-12 col-sm-8 col-md-9">
+      <Col xs="12" sm="8" md="9" className="blog">
         <h1 className="blog-title">004 - Down, But Not Out</h1>
         <h4 className="blog-date">2017-04-10</h4>
         <p>
@@ -58,7 +59,7 @@ class BlogPost004 extends Component {
                         previousTitle="003 - This Just Got Real"
                         nextLink="/"
                         nextTitle="Back Home"/>
-      </div>
+      </Col>
     );
   }
 }

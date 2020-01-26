@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import { Col } from 'reactstrap';
 import AllBlogPosts from './AllBlogPosts';
 
 class Home extends Component {
   render() {
     return (
-      <div className="col-12 col-sm-8 col-md-9 text-center">
+      <Col xs="12" sm="8" md="9" className="text-center">
         <h1>Hello there! ;]</h1>
         <AllBlogPosts/>
-      </div>
+      </Col>
     );
   }
 }
